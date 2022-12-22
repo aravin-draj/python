@@ -1,0 +1,10 @@
+u=int(input("total unit consumed ="))
+if u<=100:
+    t=u*1.5
+elif 100<u<=200:
+    t=100*1.5+(u-100)*2
+elif 200<u<=300:
+    t=100*1.5+100*2.5+(u-200)*3.5
+else:
+    t=1500
+print(t)
