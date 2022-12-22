@@ -1,0 +1,10 @@
+a=(input("enter the signal colour :"))
+if a=="green":
+    print("go")
+elif a=="yellow":
+    print("wait")
+elif a=="red":
+    print("stop")
+else:
+    print("please enter a valid colour")
+    
