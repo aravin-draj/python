@@ -1,0 +1,33 @@
+def add(a,b):
+    return a+b    #addition function
+def subtract(a,b):
+    return a-b   #subraction function
+def multiply(a,b):
+    return a*b   #multiply function
+def division(a,b):
+    return a/b   #division function
+print("welcome to calculator")
+print("please select the operation")
+print("option   operation")
+print("1        addition\n2        subraction\n3        multiply\n4        division")
+c=int(input("enter the option :"))
+if c==1:
+    print("you have selected addition")
+elif c==2:
+    print("you have selected subtraction")
+elif c==3:
+    print("you have selected multiply")
+elif c==4:
+    print("you have selected division")
+a=int(input("enter number 1 :"))
+b=int(input("enter number 2 :"))
+if c==1:
+    print(add(a,b))
+elif c==2:
+    print(subtract(a,b))
+elif c==3:
+    print(multiply(a,b))
+elif c==4:
+    print(division(a,b))
+else:
+    print("enter a valid option")
