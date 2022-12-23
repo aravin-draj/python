@@ -22,12 +22,12 @@ elif c==4:
 a=int(input("enter number 1 :"))
 b=int(input("enter number 2 :"))
 if c==1:
-    print(add(a,b))
+    print("result",add(a,b))
 elif c==2:
-    print(subtract(a,b))
+    print("result",subtract(a,b))
 elif c==3:
-    print(multiply(a,b))
+    print("result",multiply(a,b))
 elif c==4:
-    print(division(a,b))
+    print("result",division(a,b))
 else:
     print("enter a valid option")
