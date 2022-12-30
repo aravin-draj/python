@@ -1,0 +1,13 @@
+books=["c","c++","java","python"]
+print("curently no of books available",len(books))
+i=int(input("enter the position of to insert :"))
+e=input("enter the element to insert :")
+books.insert(i,e)
+print("updated books list :",books)
+print("no of books available after updation",len(books))
+d=int(input("enter the position of book to be deleted :"))
+books.pop(d)
+print("books list after deletion",books)
+print("no of books available after deletion",len(books))
+books.sort()
+print("after sorting book list is ",books)
