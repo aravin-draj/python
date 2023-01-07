@@ -1,0 +1,44 @@
+d=int(input("enter the date :"))
+m=input("enter the month :")
+y=int(input("enter the year :"))
+if y%400==0 and y%100==0:
+    f=29
+elif y%100!=0 and y%4==0:
+    f=29
+else:
+    f=28
+if m=='1' or m=="january":
+    t=d
+elif m=='2' or m=="febuary":
+    t=31+d
+elif m=='3' or m=="march":
+    t=31+f+d
+elif m=='4' or m=="april":
+    t=31+f+31+d
+elif m=='5' or m=="may":
+    t=31+f+31+30+d
+elif m=='6' or m=="june":
+    t=31+f+31+30+31+d
+elif m=='7' or m=="july":
+    t=31+f+31+30+31+30+d
+elif m=='8' or m=="august":
+    t=31+f+31+30+31+30+31+d
+elif m=='9' or m=="september":
+    t=31+f+31+30+31+30+31+31+d
+elif m=='10' or m=="october":
+    t=31+f+31+30+31+30+31+31+30+d
+elif m=='11' or m=="november":
+    t=31+f+31+30+31+30+31+31+30+31+d
+elif m=='12' or m=="december":
+    t=31+f+31+30+31+30+31+31+30+31+30+d
+else:
+    print("enter a valid input")
+print("the total number of days finished is :",t)
+if y%400==0 and y%100==0:
+    days=366
+elif y%100!=0 and y%4==0:
+    days=366
+else:
+    days=365
+print("the remaining days is :",days-t)
+
