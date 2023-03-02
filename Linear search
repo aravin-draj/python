@@ -1,0 +1,12 @@
+l=[]
+e=int(input("enter number of elements "))
+for i in range(0,e):
+    a=int(input("enter the element"))
+    l.append(a)
+fe=int(input("enter the element to find"))
+for i in range(0,len(l)):
+    if l[i]==fe:
+        print("the position",i)
+        break
+else:
+    print("not found")
